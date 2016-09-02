@@ -72,7 +72,12 @@ void comparison::compareimages()
 
     cout << "comp result: " << comparison << endl;
 
-    drawthresh();
+    if(comparison != 1.0){
+        drawthresh();
+    }else{
+        cout << "No difference" << endl;
+    }
+
 
     return;
 }
